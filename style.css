@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'minecraftbold';
+    src: url('fonts/minecraft/minecraft-bold-webfont.woff2') format('woff2'),
+         url('fonts/minecraft/minecraft-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'minecraftbold_italic';
+    src: url('fonts/minecraft/minecraft-bolditalic-webfont.woff2') format('woff2'),
+         url('fonts/minecraft/minecraft-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'minecraftitalic';
+    src: url('fonts/minecraft/minecraft-italic-webfont.woff2') format('woff2'),
+         url('fonts/minecraft/minecraft-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'minecraftregular';
+    src: url('fonts/minecraft/minecraft-regular-webfont.woff2') format('woff2'),
+         url('fonts/minecraft/minecraft-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html {
+    font-family: 'minecraftregular';
+    background-color: #55FFFF;
+    cursor: url(sword.cur), auto;
+}
+
+body {
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-top: 2vw;
+    font-size: 1.2vw;
+}
+
+h1, b {
+    font-family: 'minecraftbold';
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    margin-top: 5vh;
+    margin-left: 1vw;
+    margin-right: 1vh;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item {
+    text-align: center;
+    margin: 2vw;
+  }
+
+.discord-widget {
+    width: 20vw;
+    height: 40vh;
+}
+
+#pre-date, #date, #post-date {
+    display: none;
+}
+
+#countdown {
+    margin: 0;
+    font-size: 5vw;
+    text-align: center;
+}

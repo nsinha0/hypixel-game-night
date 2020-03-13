@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hypixel Game Night</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Hypixel Game Night</h1>
+    <h2>5-6PM MST</h2>
+    <h3>
+      A nightly game night where students from
+      <a href="https://www.peaktopeak.org/">Peak to Peak Charter School</a> can
+      hang out and play Minecraft together!
+    </h3>
+    <p>
+      So,
+      <a href="https://www.bvsd.org/current-topics/coronavirus"
+        >school is cancelled for the next three weeks, which means we now have a
+        lot of freetime.</a
+      >
+      Sadly, we can barely hang out in person, so P2P Hack Club has created a
+      game night for students at Peak to Peak Charter School! If we can't hang
+      out in person, why not hang out playing Minecraft minigames virtually!
+    </p>
+    <p>
+      We are organizing nightly games to hang out and play whatever we are
+      feeling like.
+      <a href="https://hypixel.net/play/"
+        >Stuff like BedWars, SkyWars, Murder Mystery, Arcade Games, and more!</a
+      >
+    </p>
+    <p>
+      <b>Saturday is tournament night!</b> Over the next three weeks, we want to
+      organize 3 hypixel tournaments. Stay tuned for more information!
+    </p>
+
+    <div class="grid-container">
+      <iframe
+        class="grid-item discord-widget"
+        src="https://canary.discordapp.com/widget?id=663937413818744833&theme=dark"
+        allowtransparency="true"
+        frameborder="0"
+      ></iframe>
+      <div class="grid-item">
+        <div id="pre-date">
+          <p class="grid-item" id="countdown"></p>
+          <p class="countdown-text">until Hypixel Game Night's first call!</p>
+          <p class="countdown-button">
+            <a href="https://discord.gg/fSjjXzv">Join the Discord</a>
+          </p>
+        </div>
+        <div id="date">
+          <h2>Hypixel Game Night is officially happening right now!</h2>
+          <p class="countdown-button">
+            <a href="https://discord.gg/fSjjXzv">Join the Discord</a>
+          </p>
+        </div>
+        <div id="post-date">
+          <h2>Hypixel Game Night is officially over!</h2>
+          <p class="countdown-button">
+            <a href="https://discord.gg/fSjjXzv">Join the Discord</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+      // Set the date we're counting down to
+      const countDownDate = new Date("March 13, 2020 17:00").getTime();
+      const hour = new Date().getHours();
+      console.log(hour);
+
+      // Update the count down every 1 second
+      var x = setInterval(function() {
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Output the result in an element with id="demo"
+        document.getElementById("countdown").innerHTML =
+          days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+        // If the count down is over, write some text
+        
+        
+        if (distance < 0) {
+          clearInterval(x);
+          if (hours <= 18 && hours >= 17) {
+            document.getElementById("date").style.display = "block";
+          } else {
+            document.getElementById("post-date").style.display = "block";
+          }
+        } else {
+          document.getElementById("pre-date").style.display = "block";
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>
