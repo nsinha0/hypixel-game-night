@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hypixel Game Night</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <p class="alert"><b>ALERT:</b> Pardon our dust! This website going through a major overhaul over the next few weeks! We are going to update the design and functionality of the site to make it more useful and accessible. <a href="mailto:contact@p2phack.club">If something is broken, please tell us!</a></p>
     <h1>Hypixel Game Night</h1>
     <h2>5-6PM+ MST, Every Friday</h2>
     <h4><a href="https://p2phack.club">Hosted by P2P Hack Club</a></h4>
     <h3>
-      A <b>weekly game</b> night where students from
-      <a href="https://www.peaktopeak.org/">Peak to Peak Charter School</a> can
-      hang out and play Minecraft together!
+        A <b>weekly game</b> night where students from
+        <a href="https://www.peaktopeak.org/">Peak to Peak Charter School</a> can hang out and play Minecraft together!
     </h3>
     <p>
-      So,
-      <a href="https://www.bvsd.org/parents-students/academics/secondary-home-learning"
-        >we are going to be home for a while.</a
+        So,
+        <a href="https://www.bvsd.org/parents-students/academics/secondary-home-learning">we are going to be home for a while.</a
       >
       Without school, we wanted to create something that would bring us together. That's why we've created Hypixel Game Night. After online school finishes for the week, what better way is there to wind down than playing Minecraft with friends!
     </p>
@@ -34,85 +34,81 @@
 
     <h1>How do I join?</h1>
     <ol>
-      <li><a href="https://discord.gg/fSjjXzv">Click here to join the P2P Hack Club discord server.</a>a Discord is a video calling and chatting service that we use to video call, as well as chatting throughout the week. We host HGN on our discord, as well as post announcements about P2P Hack Club and other school-related events.</li>
-      <iframe
-        class="grid-item discord-widget"
-        src="https://canary.discordapp.com/widget?id=663937413818744833&theme=dark"
-        allowtransparency="true"
-        frameborder="0"
-      ></iframe>
-      <li>Go to #verification and send a message. If needed, we will ask for further verification that you are someone from Peak to Peak.</li>
-      <li>Wait to be verified. This usually takes a couple of minutes, but it could take up to a day for a server moderator to verify you. Please be patient, because we have a small moderation team!</li>
-      <li>Once you are verified, you are officially a member of the server! When the call is about to start, join the "Main Room" voice channel, and you will be in the call!</li>
-    </ol>
-    
+      <li><a href="https://discord.gg/fSjjXzv">Click here to join the P2P Hack Club discord server.</a>a Discord is a video calling and chatting service that we use to video call, as well as chatting throughout the week. We host HGN on our discord,
+        as well as post announcements about P2P Hack Club and other school-related events.</li>
+        <iframe class="grid-item discord-widget" src="https://canary.discordapp.com/widget?id=663937413818744833&theme=dark" allowtransparency="true" frameborder="0"></iframe>
+        <li>Go to #verification and send a message. If needed, we will ask for further verification that you are someone from Peak to Peak.</li>
+        <li>Wait to be verified. This usually takes a couple of minutes, but it could take up to a day for a server moderator to verify you. Please be patient, because we have a small moderation team!</li>
+        <li>Once you are verified, you are officially a member of the server! When the call is about to start, join the "Main Room" voice channel, and you will be in the call!</li>
+        </ol>
+        <p> Please remember that you must be 13+, and have parental consent!</p>
+        <div class="grid-container">
 
-    <div class="grid-container">
-      
-      <div class="grid-item">
-        <div id="pre-date">
-          <p class="grid-item" id="countdown"></p>
-          <p class="countdown-text">until Hypixel Game Night's call!</p>
-          <p class="countdown-button">
-            <a href="https://discord.gg/fSjjXzv">Join the Discord</a>
-          </p>
+            <div class="grid-item">
+                <div id="pre-date">
+                    <p class="grid-item" id="countdown"></p>
+                    <p class="countdown-text">until Hypixel Game Night's call!</p>
+                    <p class="countdown-button">
+                        <a href="https://discord.gg/fSjjXzv">Join the Discord</a>
+                    </p>
+                </div>
+                <div id="date">
+                    <h2>Hypixel Game Night is officially happening right now!</h2>
+                    <p class="countdown-button">
+                        <a href="https://discord.gg/fSjjXzv">Join the Discord</a>
+                    </p>
+                </div>
+                <div id="post-date">
+                    <h2>Hypixel Game Night is officially over!</h2>
+                    <p class="countdown-button">
+                        <a href="https://discord.gg/fSjjXzv">Join the Discord</a>
+                    </p>
+                </div>
+            </div>
         </div>
-        <div id="date">
-          <h2>Hypixel Game Night is officially happening right now!</h2>
-          <p class="countdown-button">
-            <a href="https://discord.gg/fSjjXzv">Join the Discord</a>
-          </p>
-        </div>
-        <div id="post-date">
-          <h2>Hypixel Game Night is officially over!</h2>
-          <p class="countdown-button">
-            <a href="https://discord.gg/fSjjXzv">Join the Discord</a>
-          </p>
-        </div>
-      </div>
-    </div>
 
-    <script src="script.js"></script>
-    <script>
-      // Set the date we're counting down to
-      const countDownDate = new Date("March 18, 2020 17:00").getTime();
-      const hour = new Date().getHours();
-      console.log(hour);
+        <script src="script.js"></script>
+        <script>
+            // Set the date we're counting down to
+            const countDownDate = new Date("March 18, 2020 17:00").getTime();
+            const hour = new Date().getHours();
+            console.log(hour);
 
-      // Update the count down every 1 second
-      var x = setInterval(function() {
-        // Get today's date and time
-        var now = new Date().getTime();
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+                // Get today's date and time
+                var now = new Date().getTime();
 
-        // Find the distance between now and the count down date
-        var distance = countDownDate - now;
+                // Find the distance between now and the count down date
+                var distance = countDownDate - now;
 
-        // Time calculations for days, hours, minutes and seconds
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor(
-          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-        );
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor(
+                    (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+                );
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        // Output the result in an element with id="demo"
-        document.getElementById("countdown").innerHTML =
-          days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+                // Output the result in an element with id="demo"
+                document.getElementById("countdown").innerHTML =
+                    days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
 
-        // If the count down is over, write some text
-        
-        
-        if (distance < 0) {
-          clearInterval(x);
-          if (hours <= 18 && hours >= 17) {
-            document.getElementById("date").style.display = "block";
-          } else {
-            document.getElementById("post-date").style.display = "block";
-          }
-        } else {
-          document.getElementById("pre-date").style.display = "block";
-        }
-      }, 1000);
-    </script>
-  </body>
+                // If the count down is over, write some text
+
+
+                if (distance < 0) {
+                    clearInterval(x);
+                    if (hours <= 18 && hours >= 17) {
+                        document.getElementById("date").style.display = "block";
+                    } else {
+                        document.getElementById("post-date").style.display = "block";
+                    }
+                } else {
+                    document.getElementById("pre-date").style.display = "block";
+                }
+            }, 1000);
+        </script>
+</body>
+
 </html>
